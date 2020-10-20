@@ -14,33 +14,30 @@
 }
 html,
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   position: relative;
-  width: 1440px;
-  height: 1024px;
-
-  background: linear-gradient(
-      116.82deg,
-      rgba(237, 145, 33, 0.8) 0%,
-      rgba(117, 3, 196, 0.8) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(231, 96, 102, 0.8) 0%,
-      rgba(19, 33, 80, 0.8) 100%
-    ),
-    #ffffff;
-  background-blend-mode: color;
-  background-blend-mode: color;
 }
+
 h1 {
   font-family: "Caudex", serif;
+  font-size: 96px;
+  line-height: 124px;
+  color: #000000;
 }
 h2 {
   font-family: "Caudex", serif;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 p:last-child {
   margin-bottom: 0;
@@ -59,16 +56,12 @@ p {
 }
 a[href] {
   color: var(--blue);
+  text-decoration: none;
 }
 a[href]:visited {
   color: var(--navy);
 }
-main {
-  padding: 1rem;
-}
-main :first-child {
-  margin-top: 0;
-}
+
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
@@ -78,58 +71,50 @@ code {
   line-height: 1.5;
 }
 
-/* Nav */
-.nav {
-  padding: 0;
-  list-style: none;
-  float: left;
-  margin-left: 1em;
-}
-.nav-item {
-  display: inline-block;
-  margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-  text-decoration: none;
-}
-.nav-item-active {
-  font-weight: 700;
-  text-decoration: underline;
-}
 
-/* Tags */
-.tag {
-  display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
-  padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red);
-  color: var(--white);
-  border-radius: 0.25em; /* 3px /12 */
-  text-decoration: none;
-}
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
 }
 
+.wrapper-domains{
+  width: 500px;
+}
+
+.card-domains{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 60px #FFFFFF;
+  border-radius: 9px;
+}
+
 .marquee {
-  height: 50px;
+  height: 100px;
   overflow: hidden;
   position: relative;
-  background: yellow;
-  color: orange;
-  border: 1px solid orange;
+  border: 1px solid black;
 }
-.marquee p {
+.marquee :hover{
+
+}
+
+.marquee input[type=text] {
+  text-align: right;
+  border: none;
+  background-color: rgba(0,0,0,0.0);
+
+
+
+}
+.marquee h2 {
   position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
-  line-height: 50px;
-  text-align: center;
+  line-height: 100px;
+  text-align: right;
+  -webkit-text-fill-color: background:rgba(0,0,0,0.9);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   /* Starting position */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -168,3 +153,69 @@ a[href].tag:visited {
     transform: translateX(-100%);
   }
 }
+
+/*Footer Logo*/
+footer{
+  margin: 0%;
+}
+#circle {
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  overflow: hidden;
+}
+
+#circle text {
+  font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold;
+}
+
+#circle svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+

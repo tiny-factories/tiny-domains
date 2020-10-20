@@ -4,17 +4,27 @@ tags:
   - nav
 navtitle: Home
 ---
-<div class="vh-50 dt w-100 tc" >
+<div class="" >
+  <div class="20vh">
+    <h1 class="tc ma">{{ metadata.title }}</h1>
+    <p class="tc ma">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque duis molestie enim suspendisse vitae pellentesque. Consectetur massa faucibus eu vulputate faucibus vitae est. </p>
+  </div>
+  <div class="marquee" >
+   <h2 class="cssmarquee"><input type="text" id="fname" value="brownsugar">.milktea</h2>
+  </div>
+    <div class="marquee" >
+      <h2 class="cssmarquee"><input type="text" id="fname" value="css">.learnable</h2>
+
+    </div>
+  </div>
+  <div class="wrapper-domains">
+    {% set postslist = collections.domains %}
+    {% include "domainlist.njk" %}
+  </div>
+
   <div class="">
-    <h1 class="">{{ metadata.title }}</h1>
-    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque duis molestie enim suspendisse vitae pellentesque. Consectetur massa faucibus eu vulputate faucibus vitae est. </p>
+  <p>~ tune in for more domains</p>
+  <input type="text" id="fname" value="brownsugar">
   </div>
-</div>
-<div class="vh-50 dt w-100 tc" >
-  <div class="marquee" >
-   <p class="cssmarquee">.milktea</p>
-  </div>
-  <div class="marquee" >
-    <p class="cssmarquee"> .learnable</p>
-  </div>
+
 </div>
