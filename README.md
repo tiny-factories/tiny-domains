@@ -1,3 +1,5 @@
+> WIP Will Launch November 1st 2020
+
 # Not your typical domain
 We are not your typical domain owner, all of our revenue goes to the community and the planet. Here is a bit about how we spend the funds raised from selling domains.
 
