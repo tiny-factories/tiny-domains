@@ -1,16 +1,11 @@
 ---
 title: learnable
-description: This is a post on My Blog about touchpoints and circling wagons.
+description: Weather it's tutorials, online classes, reading groups, or learning squads we are hear to help you share your knowledge with the world.
 date: 2018-09-30
-tags: 
+tags:
   - domains
 layout: layouts/post.njk
+live: true
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
-## Section Header
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Well everything we hope! The .learnable namespace creates new opportunities for non traditional forms of education to take shape. Whether it's tutorials, online classes, reading groups, or learning squads we are here to help you share your knowledge with the world. As a Top Level Domain (TLD) you will help us declare a new space for open learning on the internet.

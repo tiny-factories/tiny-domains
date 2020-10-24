@@ -4,27 +4,45 @@ tags:
   - nav
 navtitle: Home
 ---
-<div class="" >
-  <div class="20vh">
-    <h1 class="tc ma">{{ metadata.title }}</h1>
-    <p class="tc ma">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque duis molestie enim suspendisse vitae pellentesque. Consectetur massa faucibus eu vulputate faucibus vitae est. </p>
-  </div>
-  <div class="marquee" >
-   <h2 class="cssmarquee"><input type="text" id="fname" value="brownsugar">.milktea</h2>
-  </div>
-    <div class="marquee" >
-      <h2 class="cssmarquee"><input type="text" id="fname" value="css">.learnable</h2>
 
-    </div>
-  </div>
-  <div class="wrapper-domains">
+
+
+<section class="" >
+    <h1 class="title tc">{{ metadata.title }}</h1>
+    <p class="tc pv5 f4">We are not your typical domain owner, all of our revenue goes to the community and the planet.</p>
+</section>
+
+<section class="w-100 marquee">
+  <span>
+    <h2><input type="text" id="fname" value="brownsugar">.milktea</h2>
+  </span>
+  <span>
+    <h2><input type="text" id="fname" value="boba">.milktea</h2>
+  </span>
+  <span>
+    <h2><input type="text" id="fname" value="brownsugar">.milktea</h2>
+  </span>
+</section>
+<section class="w-100 marquee">
+  <span>
+    <h2><input type="text" id="fname" value="brownsugar">.lear</h2>
+  </span>
+  <span>
+    <h2><input type="text" id="fname" value="brownsugar">.milktea</h2>
+  </span>
+  <span>
+    <h2><input type="text" id="fname" value="brownsugar">.milktea</h2>
+  </span>
+</section>
+
+
+  <div class="wrapper-domains ma5 center flex flex-wrap">
     {% set postslist = collections.domains %}
     {% include "domainlist.njk" %}
   </div>
+  <div class="card-domains center w-100 w-50-ns pa3">
+    <form action="https://tinyletter.com/tiny-domains" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tiny-domains', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">~ tune in for more domains</label></p><p class="w-100"><input class="w-80" type="text" name="email" id="tlemail" value="name@email.com"/><input type="hidden" value="1" name="embed"/><input type="submit" value="→" /></p></form>
 
-  <div class="">
-  <p>~ tune in for more domains</p>
-  <input type="text" id="fname" value="brownsugar">
   </div>
 
 </div>

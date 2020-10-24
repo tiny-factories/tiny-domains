@@ -14,16 +14,15 @@
 }
 html,
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   position: relative;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
-h1 {
+.title {
   font-family: "Caudex", serif;
   font-size: 96px;
   line-height: 124px;
@@ -34,6 +33,7 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.05em;
+  margin-block-start: 0em;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -42,15 +42,7 @@ h2 {
 p:last-child {
   margin-bottom: 0;
 }
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
-}
-p,
-.tmpl-post li {
-  line-height: 1.45;
-}
+
 p {
   font-family: "Jura", sans-serif;
 }
@@ -71,102 +63,46 @@ code {
   line-height: 1.5;
 }
 
-
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
 }
 
-.wrapper-domains{
-  width: 500px;
+.wrapper-domains {
 }
 
-.card-domains{
-  background: #FFFFFF;
-  box-shadow: 0px 0px 60px #FFFFFF;
+.hidden {
+  display: none;
+}
+
+.card-domains {
+  background: #ffffff;
+  box-shadow: 0px 0px 60px #ffffff;
   border-radius: 9px;
+  height: 200px;
 }
 
-.marquee {
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid black;
-}
-.marquee :hover{
-
-}
-
-.marquee input[type=text] {
-  text-align: right;
-  border: none;
-  background-color: rgba(0,0,0,0.0);
-
-
-
-}
-.marquee h2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 100px;
-  text-align: right;
-  -webkit-text-fill-color: background:rgba(0,0,0,0.9);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  /* Starting position */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  /* Apply animation to this element */
-  -moz-animation: scroll-left 5s linear infinite;
-  -webkit-animation: scroll-left 5s linear infinite;
-  animation: scroll-left 5s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes scroll-left {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-@keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%);
-  }
+.star {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /*Footer Logo*/
-footer{
-  margin: 0%;
+footer {
 }
 #circle {
   position: relative;
-  width: 30%;
-  padding-bottom: 30%;
+  width: 20%;
+  padding-bottom: 20%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #circle text {
-  font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold;
+  font-family: "Helvetica Neue", Arial;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #circle svg {
@@ -175,47 +111,117 @@ footer{
   top: 0;
 
   -webkit-animation-name: rotate;
-     -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-       -o-animation-name: rotate;
-          animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 5s;
-     -moz-animation-duration: 5s;
-      -ms-animation-duration: 5s;
-       -o-animation-duration: 5s;
-          animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-       -o-animation-timing-function: linear;
-          animation-timing-function: linear;
-
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+  }
 }
 @-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
 }
 @-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0);
+  }
 }
 @-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
 }
 @keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
+.marquee {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee input[type="text"] {
+  font-family: "Caudex", serif;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: black;
+  text-align: right;
+  background: transparent;
+  border: none;
+  width: 250px;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 8s linear infinite;
+}
+.marquee:hover span {
+  animation-play-state: paused;
+}
 
+.marquee span:nth-child(1) {
+  animation-delay: 0s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.marquee span:nth-child(4) {
+  animation-delay: 2.4s;
+}
+.marquee span:nth-child(5) {
+  animation-delay: 3.2s;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}

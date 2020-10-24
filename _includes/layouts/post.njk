@@ -2,8 +2,43 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<div class="card-domains center w-60 pa5">
+  <h2>What is .{{ title }}</h2>
 
-{{ content | safe }}
+  {{ content | safe }}
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<div class="fl w-100">
+  <p>Currently our domains are offered through three partners:</p>
+    <div class="fl w-thirds">
+      <a href="https://www.101domain.com">
+        <img src=""/>
+        <h3>101domain</h3>
+      </a>
+    </div>
+    <div class="fl w-thirds">
+      <a href="https://gateway.io">
+        <img src=""/>
+        <h3>Gateway</h3>
+      </a>
+    </div>
+  <div class="fl w-thirds">
+    <a href="https://www.encirca.com">
+      <img src=""/>
+      <h3>Encirca</h3>
+    </a>
+  </div>
+</div>
+  Your domain purchase directly supports creators, freelancers, and the Earth
+
+  <p>We are not your typical domain owner, all of our revenue goes to the community and the planet. Here is a bit about how we spend the funds raised from selling domains.
+</p>
+  <h3> 15% for the Earth </h3>
+
+  We are in a state of ambient emergency when it comes to the climate crisis. We take 15% of all revenue and to fund climate mitigation projects. You can read more about what work we have supported on our <a href="domains.tinyfactories.space/blog">blog</a>.
+<br />
+<br />
+
+  Currently <b>learnable</b> can be purchased through our partners thanks to <a href="http://namebase.io/">namebase.io</a>.
+  </div>
+
+</div>
