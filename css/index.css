@@ -187,6 +187,11 @@ footer {
     transform: rotate(0);
   }
 }
+input[type="text"] {
+  background: transparent;
+  border: 0px solid;
+  text-align: right;
+}
 
 .marquee span h2 {
   display: inline-block;
@@ -198,6 +203,14 @@ footer {
   --offset: 20vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
+  font-family: "Caudex", serif;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  margin-block-start: 0em;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .marquee__inner {
