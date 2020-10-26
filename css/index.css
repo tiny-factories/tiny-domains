@@ -30,7 +30,6 @@ body {
 }
 
 h2 {
-  font-family: "Caudex", serif;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.05em;
@@ -114,7 +113,11 @@ input {
   height: 30px;
 }
 
-.newletter input ::placeholder {
+.newletter input[type="submit"] {
+  line-height: none;
+}
+
+.newletter input ::value {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: gray;
   opacity: 1; /* Firefox */
@@ -130,6 +133,7 @@ input {
   border-radius: 0px 3px 3px 0px;
   text-align: left;
   height: 30px;
+  line-height: normal;
 }
 
 .star {
