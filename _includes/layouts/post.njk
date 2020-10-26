@@ -2,26 +2,26 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<div class="card-domains center w-60 pa5">
+<div class="card domains center w-80 pa5">
   <h2>What is .{{ title }}</h2>
 
   {{ content | safe }}
 
-<div class="fl w-100">
+<div class="flex flex-wrap w-100">
   <p>Currently our domains are offered through three partners:</p>
-    <div class="fl w-thirds">
+    <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
       <a href="https://www.101domain.com">
         <img src=""/>
         <h3>101domain</h3>
       </a>
     </div>
-    <div class="fl w-thirds">
+    <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
       <a href="https://gateway.io">
         <img src=""/>
         <h3>Gateway</h3>
       </a>
     </div>
-  <div class="fl w-thirds">
+  <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
     <a href="https://www.encirca.com">
       <img src=""/>
       <h3>Encirca</h3>
@@ -38,7 +38,7 @@ templateClass: tmpl-post
 <br />
 <br />
 
-  Currently <b>learnable</b> can be purchased through our partners thanks to <a href="http://namebase.io/">namebase.io</a>.
+  Currently <b>{{title}}</b> can be purchased through our partners thanks to <a href="http://namebase.io/">namebase.io</a>.
   </div>
 
 </div>

@@ -15,8 +15,9 @@
 
 
     <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-    </header>
+      <section class="" >
+          <h1 class="title tc">{{ metadata.title }}</h1>
+      </section>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}

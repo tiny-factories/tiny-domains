@@ -68,18 +68,27 @@ a[href].tag:visited {
   color: #fff;
 }
 
-.wrapper-domains {
+.comming-soon {
 }
 
-.hidden {
-  display: none;
+.comming-soon img {
+}
+.line {
+  border: 1px solid black;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
-.card-domains {
+.card {
   background: #ffffff;
   box-shadow: 0px 0px 60px #ffffff;
   border-radius: 9px;
+}
+.domains {
   height: 200px;
+}
+.newletter {
+  height: 100px;
 }
 
 .star {
@@ -90,6 +99,12 @@ a[href].tag:visited {
 /*Footer Logo*/
 footer {
 }
+
+.icon-star {
+  position: absolute;
+  bottom: 0;
+}
+
 #circle {
   position: relative;
   width: 20%;
@@ -173,55 +188,45 @@ footer {
   }
 }
 
-.marquee {
-  width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.marquee input[type="text"] {
-  font-family: "Caudex", serif;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.05em;
-  color: black;
-  text-align: right;
-  background: transparent;
-  border: none;
-  width: 250px;
-}
-.marquee span {
+.marquee span h2 {
   display: inline-block;
-  font-size: 20px;
-  position: relative;
-  left: 100%;
-  animation: marquee 8s linear infinite;
 }
-.marquee:hover span {
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
   animation-play-state: paused;
 }
 
-.marquee span:nth-child(1) {
-  animation-delay: 0s;
+.marquee span {
+  font-size: 10vw;
+  padding: 0 2vw;
 }
-.marquee span:nth-child(2) {
-  animation-delay: 0.8s;
+
+.marquee .marquee__inner {
+  animation-play-state: running;
 }
-.marquee span:nth-child(3) {
-  animation-delay: 1.6s;
-}
-.marquee span:nth-child(4) {
-  animation-delay: 2.4s;
-}
-.marquee span:nth-child(5) {
-  animation-delay: 3.2s;
+.marquee:hover .marquee__inner {
+  animation-play-state: paused;
 }
 
 @keyframes marquee {
   0% {
-    left: 100%;
+    transform: translate3d(var(--move-initial), 0, 0);
   }
+
   100% {
-    left: -100%;
+    transform: translate3d(var(--move-final), 0, 0);
   }
 }

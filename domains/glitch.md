@@ -1,6 +1,6 @@
 ---
 title: glitch
-description: This is a post on My Blog about touchpoints and circling wagons.
+description: Want to...
 date: 2018-09-30
 tags:
   - domains
