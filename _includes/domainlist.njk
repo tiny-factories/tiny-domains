@@ -1,9 +1,10 @@
 {% for post in postslist | reverse %}
 
-  <div class="pa3 fl w-100 w-50-ns{% if post.data.live == false %} comming-soon{% endif %}">
-    <div class="card domains pa4">
+  <div class="pa4 fl w-100 w-50-ns">
+    <div class="{% if post.data.live == false %} coming-soon domains pa4{% endif %}card domains pa4">
       <a href="{{ post.url | url }}">
         <h2>{{ post.data.title }}</h2>
+        <img class="{% if post.data.live == true %} hidden{% endif %}" src="{{ 'img/coming-soon.png' | url }}" />
         <p>{{ post.data.description }}</p>
       </a>
     </div>

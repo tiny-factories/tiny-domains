@@ -5,56 +5,69 @@ tags:
 navtitle: Home
 ---
 
-<section class="" >
-    <h1 class="title tc">{{ metadata.title }}</h1>
-    <p class="tc ph5 pb5 f4">We are not your typical domain owner, all of our revenue goes to the community and the planet.</p>
+<section class="center w-100 w-100-m w-70-ns" >
+  <h1 class="title tc">{{ metadata.title }}</h1>
+  <p class="tc ph5 pb5 f4">We are a domain owner and distributor of fun and rare domain names. All of your subscription goes directly toward supporting freelancers and the planet.</p>
 </section>
 
-<section>
+<div>
   <hr class="line" />
   <br/>
   <div class="marquee">
     <div class="marquee__inner" aria-hidden="true">
       <span class="flex">
-        <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+        <input type="text" value="brownsugar"><label>.milktea</label>
       </span>
       <span class="flex">
-        <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+        <input type="text" value="boba"><label>.milktea</label>
       </span>
       <span class="flex">
-        <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+        <input type="text" value="matcha"><label>.milktea</label>
+      </span>
+      <span class="flex">
+        <input type="text" value="winter-melon"><label>.milktea</label>
+      </span>
+      <span class="flex">
+        <input type="text" value="london-fog"><label>.milktea</label>
+      </span>
+      <span class="flex">
+        <input type="text" value="i-love"><label>.milktea</label>
       </span>
     </div>
   </div>
+  <br/>
   <hr class="line" />
   <br/>
   <div class="marquee">
      <div class="marquee__inner" aria-hidden="true">
        <span class="flex">
-         <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+         <input type="text" value="anythingis"><label>.learnable</label>
        </span>
        <span class="flex">
-         <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+         <input type="text" value="javascriptis"><label>.learnable</label>
        </span>
        <span class="flex">
-         <input type="text" id="fname" value="brownsugar"><label>.milktea</label>
+         <input type="text" value="chineseis"><label>.learnable</label>
        </span>
+       <span class="flex">
+        <input type="text" value="mathis"><label>.learnable</label>
+      </span>
+      <span class="flex">
+       <input type="text" value="designis"><label>.learnable</label>
+     </span>
      </div>
    </div>
+   <br/>
   <hr class="line" />
-</section>
-
-
+</div>
+<div class="center w-100 w-100-m w-80-l">
   <div class="wrapper ma5 center flex flex-wrap">
     {% set postslist = collections.domains %}
     {% include "domainlist.njk" %}
   </div>
   <div class="wrapper ma5 center flex flex-wrap">
-
-  <div class="card newletter center w-100 w-50-ns">
-    <form action="https://tinyletter.com/tiny-domains" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tiny-domains', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">~ tune in for more domains</label></p><p class="w-100"><input class="w-80" type="text" name="email" id="tlemail" value="name@email.com"/><input type="hidden" value="1" name="embed"/><input type="submit" value="→" /></p></form>
+  <div class="card newletter center w-100 w-50-ns pa4">
+    <form action="https://tinyletter.com/tiny-domains" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tiny-domains', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail"><b>~ tune in for more domains</b></label></p><p class="w-100"><input class="w-80" type="text" name="email" id="tlemail" value="name@email.com"/><input type="hidden" value="1" name="embed"/><input class="arrow-line-error" type="submit" value="→" /></p></form>
     </div>
-
   </div>
-
 </div>

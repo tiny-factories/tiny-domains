@@ -1,32 +1,33 @@
 ---
-layout: layouts/base.njk
+layout: layouts/home.njk
 templateClass: tmpl-post
 ---
-<div class="card domains center w-80 pa5">
+<div class="card center w-80 pa5 mt5">
   <h2>What is .{{ title }}</h2>
 
   {{ content | safe }}
 
 <div class="flex flex-wrap w-100">
   <p>Currently our domains are offered through three partners:</p>
-    <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+  <ul>
+    <li>
       <a href="https://www.101domain.com">
-        <img src=""/>
         <h3>101domain</h3>
       </a>
-    </div>
-    <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-      <a href="https://gateway.io">
-        <img src=""/>
+    </li>
+    <li>
+      <a  href="https://gateway.io">
         <h3>Gateway</h3>
       </a>
-    </div>
-  <div class="fl w-thirds bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-    <a href="https://www.encirca.com">
-      <img src=""/>
-      <h3>Encirca</h3>
-    </a>
-  </div>
+    </li>
+    <li>
+      <a  href="https://www.encirca.com">
+        <h3>Encirca</h3>
+      </a>
+    </li>
+
+  </ul>
+
 </div>
   Your domain purchase directly supports creators, freelancers, and the Earth
 
