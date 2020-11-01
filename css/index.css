@@ -24,7 +24,7 @@ body {
 }
 
 .title {
-  font-family: "Caudex", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 96px;
   line-height: 124px;
   color: #000000;
@@ -267,7 +267,7 @@ input[type="text"] {
   display: flex;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 30s linear infinite;
+  animation: marquee 60s linear infinite;
   animation-play-state: paused;
 }
 
